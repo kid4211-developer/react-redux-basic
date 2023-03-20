@@ -86,7 +86,8 @@ const listener = () => {
 };
 
 // 구독을 해제하고 싶을 때는 unsubscribe() 를 호출하면 됩니다.
-const unsubscribe = store.subscribe(listener);
+// const unsubscribe = store.subscribe(listener);
+store.subscribe(listener);
 
 // 액션들을 디스패치 해봅시다.
 store.dispatch(increase());
